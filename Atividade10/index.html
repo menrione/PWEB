@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script src="arquivo.js"></script>
+    <style>
+    body {
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+
+    #btnCalcular {
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    #btnCalcular:hover {
+        background-color: #0056b3;
+    }
+
+    input {
+        padding: 10px;
+        outline: none;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+</style>
+<body>
+    <h2>Insira sua altura (cm):</h2>
+    <input type="number" id="inputAltura"><br>
+    <h2>Insira seu peso atual:</h2>
+    <input type="number" id="inputPeso"><br>
+    <button id="btnCalcular" onclick="resultado()">Calcular</button><br><br>
+    <h2 id="resultado"></h2>
+    <h2 id="classificacao"></h2>
+    <h2 id="obesidade"></h2>
+
+</body>
+</html>
