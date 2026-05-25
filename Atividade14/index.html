@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+    <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+    * {
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #campoTexto {
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+        outline: none;
+        padding: 5px;
+    }
+
+    label {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    input[type="radio"] {
+        transform: scale(1.5);
+        margin-right: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+     <form>
+
+        <h2>Transformar Texto</h2>
+
+        <input type="text"
+            id="campoTexto"
+            placeholder="Digite algo aqui">
+
+        <br><br>
+
+        <input type="radio"
+            name="transformacao"
+            id="maiusculas"
+            onclick="transformarTexto()">
+
+        <label for="maiusculas">
+            Transformar em MAIÚSCULAS
+        </label>
+
+        <br><br>
+
+        <input type="radio"
+            name="transformacao"
+            id="minusculas"
+            onclick="transformarTexto()">
+
+        <label for="minusculas">
+            Transformar em minúsculas
+        </label>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
